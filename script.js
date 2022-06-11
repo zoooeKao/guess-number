@@ -133,7 +133,7 @@ document.querySelector('.check').addEventListener('click', function () {
 			scoreDom.textContent = 0;
 		} else {
 			scoreDom.textContent = score;
-			message.textContent = `${guess > secretNum ? 'Too High!' : 'Too Low!'}`;
+			message.textContent = guess > secretNum ? 'Too High!' : 'Too Low!';
 		}
 	}
 	// when player wins
